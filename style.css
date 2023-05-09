@@ -4,7 +4,11 @@
 }
 body {
     margin: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: black;
+    font-family: 'Courier Prime', sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p {
     padding: 20px;
@@ -36,6 +40,30 @@ a {
    .center {
     width: 90%;
    }
+}
+.sampleCards {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sampleCards img {
+    height: auto;
+    width: 150px;
+}
+@media (max-width: 600px) {
+    .sampleCards {
+        width: 100%;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+    }
+    .sampleCards img{
+        margin: 10px 0px;
+    }
+} 
+.star {
+    height: 1em;
+    vertical-align: sub;
 }
 .button-text {
     position:absolute;

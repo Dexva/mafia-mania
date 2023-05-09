@@ -5,16 +5,32 @@
     <title>Mafia Mania</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
     <div>
         <img id="logo" class="center" src="assets/mafia_mania_logo.png" alt="Mafia Mania Logo">
         <h3 class="center noselect">A Machi Koro spin-off by CS5-J (SY '22-'23)</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat ultricies finibus. Praesent ultrices orci vehicula, volutpat purus id, luctus ipsum. Nam vulputate pulvinar libero, id fringilla tortor maximus sed. Duis sed fermentum tortor. Ut ut dui gravida, dignissim neque quis, placerat risus. Ut elit ex, bibendum sed condimentum at, vestibulum mattis ipsum. Maecenas id sapien non tellus egestas congue nec efficitur lorem. Integer fringilla leo quam, sed malesuada sapien elementum ut. Nam gravida posuere turpis, non eleifend turpis luctus non. </p>
+        <p>A city of opportunity and greed — welcome to New Apolinar City, mandamento.</p>
+        <p>Your family is a distinguished group of mafia members, with your father being one of the best dons that all of the
+            underground has ever seen. After your father mysteriously passed away, you were sent by your organization to take
+            over the world’s most luxurious city, New Apolinar City. However, due to the city’s insane population of wealth and
+            power, it’s only normal that other mafia organizations would want to grasp its power, too.</p>
+        <p>Mafia Mania is a game of control, wherein you attempt to take over the five most powerful landmarks in the
+            city before the other three to five other mafia organizations do.</p>
+        <p>Power is essential in New Apolinar City, but having supreme control will make you god. What are you waiting for,
+            mandamento?</p>
+        <div class="sampleCards">
+            <img src="assets/sample_purple_card.png" alt="Sample purple card">
+            <img src="assets/sample_purple_card.png" alt="Sample purple card">
+            <img src="assets/sample_purple_card.png" alt="Sample purple card">
+            <img src="assets/sample_purple_card.png" alt="Sample purple card">
+        </div>
+        <p><span class="stars" data-stars="5"></span> This is the best card game ever!  </p>
         <!-- these links are temporary -->
         <a class="center button" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
             <h1 class="noselect">The Cards</h1>
@@ -23,10 +39,14 @@
             <h1 class="noselect">The Rulebook</h1>
         </a>
     </div>
+    <script>
+        console.log("script tag run");
+        $(".stars").each(function() {
+            for (i=0; i< $(this).attr("data-stars"); i++) {
+                $(this).append(`<img src="assets/star.svg" class="star">`)
+            }
+        });
+    </script>
 </body>
-
-<script>
-
-</script>
 
 </html>
