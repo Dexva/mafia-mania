@@ -51,7 +51,7 @@ a {
     height: auto;
     width: 150px;
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .sampleCards {
         width: 100%;
         flex-wrap: wrap;
